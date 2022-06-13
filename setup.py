@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """ADSBXCOT Setup.
-Source:: https://github.com/ampledata/adsbxcot
+Source:: https://github.com/aerial-defence/adsbxcot
 """
 
 import os
@@ -33,7 +33,7 @@ setuptools.setup(
     name=__title__,
     packages=[__title__],
     package_dir={__title__: __title__},
-    url=f'https://github.com/ampledata/{__title__}',
+    url=f'https://github.com/aerial-defence/{__title__}',
     description='ADSBExchange.com ADS-B to Cursor-On-Target Gateway.',
     author='Greg Albrecht',
     author_email='oss@undef.net',
@@ -42,12 +42,7 @@ setuptools.setup(
     long_description=open('README.rst').read(),
     zip_safe=False,
     include_package_data=True,
-    install_requires=[
-        'pytak >= 3.0.0',
-        'aircot',
-        'requests',
-        'aiohttp',
-    ],
+    install_requires=['aiohttp'],
     classifiers=[
         'Topic :: Communications :: Ham Radio',
         'Programming Language :: Python',
